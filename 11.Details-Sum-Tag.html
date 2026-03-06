@@ -1,0 +1,49 @@
+<!-- It allows readers to access extra information without distracting them from the main topic -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details and Summary Tag</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+            padding: 40px;
+        }
+
+        details{
+            width: 400px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid blanchedalmond;
+            box-shadow: 0px 2px 8px rgba(75, 4, 4, 0.1);
+        }
+        summary{
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        p{
+            margin-top:10px;
+            font-size:14px;
+            line-height:1.5;
+        }
+    </style>
+</head>
+<body>
+    <details open>
+        <!--The open attribute is used with the <details> tag to make the hidden content visible by 
+        default when the webpage loads. Normally, the content inside the details tag is hidden 
+        and only appears when the user clicks the summary. But if the open attribute is added,
+        the details section will already be expanded.  -->
+        <summary>What is HTML ?</summary>
+        <p>
+            HTML stands for HyperText Markup Language. It is the standard language used to create
+            and structure webpages on the internet.
+        </p>
+    </details>
+</body>
+</html>

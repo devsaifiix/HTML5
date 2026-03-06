@@ -1,0 +1,62 @@
+<!-- The <aside> is used to place content in a sidebar i.e. aside from the existing content. 
+    It is related to surrounding content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Tage</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: space-between ;
+        }
+        article{
+            width: 450px;
+            padding: 15px;
+            background-color: rgb(130, 227, 227);
+            border: 1px solid black;
+        }
+        aside{
+            width: 220px;
+            padding: 15px;
+            margin-left: 20px;
+            background-color: bisque;
+            border: 1px solid rgb(139, 89, 13);  
+        }
+        h1,h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <article>
+        <h1>What is the Aside Tag?</h1>
+        <p>The aside tag in HTML is a semantic element used to represent content that is related to the main
+            content of the page but is not part of the main topic. It is commonly used for side information
+            such as tips, notes, advertisements, or related links. This tag helps organize a webpage and 
+            makes the structure clearer for both developers and browsers.
+        </p>
+        <h2>Why We Use the Aside Tag</h2>
+        <p>The aside tag improves the readability and structure of a webpage by separating extra information
+            from the main content. It allows developers to display supporting content like sidebars or 
+            additional notes without interrupting the main article. Using semantic tags like aside also
+            helps search engines and screen readers understand the purpose of the content more effectively.
+        </p>
+    </article>
+    <aside>
+        <h2>Purpose of the Aside Tag</h2>
+        <p>The aside tag is used to display content that is indirectly related to the main content of a
+            webpage. This information usually appears as a sidebar and may include additional details,
+            helpful tips, or related resources. It allows readers to access extra information without
+            distracting them from the main topic
+        </p>
+    </aside>
+    </div>
+</body>
+</html>
