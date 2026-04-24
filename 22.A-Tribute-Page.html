@@ -1,0 +1,121 @@
+<!-- A tribute page is a simple beginner project where you create a webpage about a person you 
+admire using basic HTML for structure and a little CSS for styling and layout.
+
+- Use HTML elements like headings, paragraphs, lists, links, and images to structure the content clearly.
+- Place the image and name at the top, followed by a clean layout for details such as life, achievements,
+or qualities.
+- Apply basic CSS for background color, fonts, spacing, and alignment to improve visual appeal.
+- Keep the design simple and readable while practicing proper layout and styling techniques. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: blue;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            ;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .content {
+            padding: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .biography {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .biography h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .achievements {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievements h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .achievements ul {
+            padding-left: 20px;
+        }
+
+        .achievements li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #006400;
+            color: #fff;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tribute to Dr Abdul Qadeer Khan</h1>
+    </header>
+
+    <div class="content">
+        <section class="biography">
+            <img src="https://www.aljazeera.com/wp-content/uploads/2021/10/000_9PF4UL.jpg?resize=1800%2C1800"
+                alt="Loading Image" height="250px" width="250px">
+            <h2>About Dr Abdul Qadeer Khan</h2>
+            <p>Abdul Qadeer Khan (1936&ndash;2021) was a Pakistani nuclear physicist and metallurgical
+                engineer widely revered as the "father of Pakistan's nuclear weapons program".
+                He established the Khan Research Laboratories (KRL) in 1976 and played a critical
+                role in developing uranium enrichment centrifuges, enabling Pakistan to become
+                the first Muslim nuclear power in 1998.</p>
+        </section>
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Nuclear Weapons Program Development</li>
+                <li>Establishment of Kahuta Research Laboratories</li>
+                <li>National Security Enhancement</li>
+                <li>Development of Conventional Weapons</li>
+                <li>Social & Educational Contributions</li>
+            </ul>
+        </section>
+        <footer>
+            <p>Created by Dev Saifii X. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
