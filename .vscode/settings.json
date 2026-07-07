@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.suggest.enabled": false,
+    "html.suggest.html5": false,
+    "html.format.indentInnerHtml": true
+}
