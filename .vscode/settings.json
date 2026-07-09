@@ -1,5 +1,12 @@
 {
     "terminal.integrated.suggest.enabled": false,
-    "html.suggest.html5": false,
-    "html.format.indentInnerHtml": true
+    "html.suggest.html5": true,
+    "html.format.indentInnerHtml": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "css.completion.triggerPropertyValueCompletion": true
 }
