@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table Header</title>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid red;
+                border-collapse: collapse;
+                border-radius: 25px;
+            }
+
+            th,
+            td {
+                text-align: center;
+                background-color: azure;
+                /* padding: 15px; */
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+             <!-- Table Caption -->
+            <caption>Age Information</caption>
+            <!-- Vertical Table Headers -->
+            <tr>
+                <th rowspan="2">Name</th>
+                <td>Jill</td>
+                <td>Eve</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Jackson</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>94</td>
+                <td>50</td>
+            </tr>
+        </table><br>
+
+        <table style="width: 100%;">
+            <!-- Table Caption -->
+            <caption>Complete Information</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Father Name</th>
+                <th>Class</th>
+                <th>Age</th>
+            </tr>
+
+            <tr>
+                <td>Saif</td>
+                <td>Ur Rahman</td>
+                <td>Anwar Tahir</td>
+                <td>BS IT</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>Hasnat</td>
+                <td>Fatima</td>
+                <td>Zafar Iqbal</td>
+                <td>BS IT</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </body>
+
+</html>

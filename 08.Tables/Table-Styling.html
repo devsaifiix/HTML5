@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Table</title>
+        <style>
+            table{
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            /*  Horizontal Zebra Stripes */
+            tr:nth-child(even){
+                background-color: #D6EEEE;
+            }
+
+            /* Vertical Zebra Stripes */
+            td:nth-child(even),
+            th:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+
+            /* Combine Vertical and Horizontal Zebra Stripes */
+            tr:nth-child(even) {
+                background-color: rgba(150, 212, 212, 0.4);
+            }
+
+            th:nth-child(even),
+            td:nth-child(even) {
+                background-color: rgba(150, 212, 212, 0.4);
+            } 
+
+            /* Horizontal Dividers */
+            td,
+            th {
+                border-bottom: 1px solid rgb(13, 193, 130);
+            }
+
+            tr:hover{
+                background-color: rgb(13, 193, 130);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Saif</td>
+                <td>BSIT</td>
+                <td>22</td>
+                <td>Sahiwal</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Ali</td>
+                <td>BSCS</td>
+                <td>21</td>
+                <td>Lahore</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Ahmed</td>
+                <td>BBA</td>
+                <td>23</td>
+                <td>Karachi</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Fatima</td>
+                <td>BSSE</td>
+                <td>20</td>
+                <td>Islamabad</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Hasnat</td>
+                <td>BSIT</td>
+                <td>19</td>
+                <td>Multan</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Ayesha</td>
+                <td>BSCS</td>
+                <td>22</td>
+                <td>Faisalabad</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Usman</td>
+                <td>BBA</td>
+                <td>24</td>
+                <td>Rawalpindi</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Zain</td>
+                <td>BSSE</td>
+                <td>21</td>
+                <td>Gujranwala</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Hina</td>
+                <td>BSIT</td>
+                <td>20</td>
+                <td>Sialkot</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Bilal</td>
+                <td>BSCS</td>
+                <td>23</td>
+                <td>Peshawar</td>
+            </tr>
+        </table>
+
+
+    </body>
+
+</html>
