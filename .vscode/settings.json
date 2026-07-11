@@ -8,5 +8,6 @@
         "other": "on"
     },
     "editor.suggestOnTriggerCharacters": true,
-    "css.completion.triggerPropertyValueCompletion": true
+    "css.completion.triggerPropertyValueCompletion": true,
+    "liveServer.settings.CustomBrowser": "chrome"
 }
