@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Form</title>
+        <style>
+            body {
+                background-color: beige;
+            }
+
+            body>h1 {
+                text-align: center;
+            }
+
+            .reg-table {
+                margin: 0 auto;
+                border: 2px solid burlywood;
+                border-radius: 10px;
+            }
+
+            .reg-table td {
+                padding: 10px;
+            }
+
+            .reg-table:hover{
+                background-color: aquamarine;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Student Registration Form</h1>
+
+        <form action="index.php" target="_blank" method="post" enctype="multipart/form-data" autocomplete="on">
+           
+            <table class="reg-table">
+                <tr>
+                    <td><label for="rollno">Roll no:</label></td>
+                    <td><input type="text" name="rollno" id="rollno" size="50" placeholder="Enter Your Roll No..."></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fname">Student Name :</label></td>
+                    <td>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <span>-</span>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="father">Father Name:</label></td>
+                    <td>
+                        <input type="text" name="father" id="father" placeholder="Enter Your Father Name..." size="50">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="dobday">Date of Birth:</label></td>
+                    <td>
+                        <input type="number" name="day" id="dobday" placeholder="Day" min="1" max="31"
+                            style="width: 60px;">
+                        <span>-</span>
+                        <input type="number" name="month" id="dobmonth" placeholder="Month" min="1" max="12"
+                            style="width: 60px;">
+                        <span>-</span>
+                        <input type="number" name="year" id="dobyear" placeholder="year" min="1900" max="2100"
+                            style="width: 70px;">
+                        (DD-MM-YYYY)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="mobile">Mobile No:</label></td>
+                    <td>
+                        <select name="country-code">
+                            <option value="+91">(+91) IND</option>
+                            <option value="+92">(+92) PAK</option>
+                            <option value="+880">(+880) BAN</option>
+                            <option value="+93">(+93) AFG</option>
+                        </select>
+                        <span>-</span>
+                        <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Mobile No..." required
+                            size="35">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email..." size="50">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Department:</td>
+                    <td>
+                        <input type="checkbox" name="department[]" id="cs" value="CS">
+                        <label for="cs">CS</label>
+
+                        <input type="checkbox" name="department[]" id="se" value="SE">
+                        <label for="se">SE</label>
+
+                        <input type="checkbox" name="department[]" id="it" value="IT">
+                        <label for="it">IT</label>
+
+                        <input type="checkbox" name="department[]" id="ai" value="AI">
+                        <label for="ai">AI</label>
+
+                        <input type="checkbox" name="department[]" id="ml" value="ML">
+                        <label for="ml">ML</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="favcolor">Choose Color:</label></td>
+                    <td><input type="color" name="color" id="favcolor"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="volume">Adjust Volume:</label></td>
+                    <td><input type="range" name="volume" id="volume" min="0" max="100"></td>
+                </tr>
+                
+                <tr>
+                    <td>Course:</td>
+                    <td>
+                        <select name="course" style="width: 100%;">
+                            <option selected disabled>---------------- Select Current Course ----------------</option>
+                            <option value="BS Computer Science">BS Computer Science</option>
+                            <option value="BS Information Technology">BS Information Technology</option>
+                            <option value="BS Software Engineering">BS Software Engineering</option>
+                            <option value="BS Computer Engineering">BS Computer Engineering</option>
+                            <option value="BS Artificial Intelligence">BS Artificial Intelligence</option>
+                            <option value="BS Machine Learning">BS Machine Learning</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select Photo:</td>
+                    <td><input type="file" name="photo" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" placeholder="Enter Your City...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="6" cols="52" placeholder="Enter Your Address..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+
+            </table>
+            
+        </form>
+    </body>
+
+</html>
